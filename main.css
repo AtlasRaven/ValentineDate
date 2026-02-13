@@ -390,8 +390,6 @@ body {
   left: 50%;
   opacity: 1;
   transform: translate(-50%, -50%);
-  height: 600px;
-  width: 800px;
   background-color: transparent;
   transition: 0.5;
   animation: animateCard 2s ease-in-out forwards;
@@ -714,5 +712,18 @@ body {
   .leftFront,
   .leftBack {
     backface-visibility: hidden;
+  }
+}
+@media (max-width: 768px) {
+  .cardValentine {
+    flex-direction: column;
+    aspect-ratio: auto;
+    height: 80%;
+  }
+
+  .cardValentine .left,
+  .cardValentine .right {
+    width: 100%;
+    height: 50%;
   }
 }
